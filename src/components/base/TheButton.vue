@@ -128,7 +128,6 @@ const bg = computed(() => {
       }"
       :size="parseInt(iconSize.toString())"
     >
-      <!--          TODO Выяснить про iconSize почему не меняет размер-->
       <slot name="icon" />
     </Icon>
 

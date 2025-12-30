@@ -6,17 +6,16 @@
     height="19"
     viewBox="0 0 19 19"
     fill="none"
+    stroke="currentColor"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
       cx="8"
       cy="8"
       r="7.5"
-      stroke="#6E7284"
     />
     <path
       d="M13.5 13.5L18.5 18.5"
-      stroke="#6E7284"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
