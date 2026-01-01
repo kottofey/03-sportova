@@ -12,7 +12,7 @@
     "type-check": "vue-tsc --build",
     "lint:front": "prettier --log-level silent --write src/ && eslint src/**/*.{ts,js,vue} --config eslint.config.ts --format stylish --fix",
     "vite:build": "vite build",
-    "deploy": "vue-tsc -b && vite build && scp -r ./dist/* kottofey@myvps:/var/www/html/masha-magic-beads.ru"
+    "deploy": "vue-tsc -b && vite build && scp -r ./dist/* kottofey@myvps:/var/www/html/sportova.romeokontakt.ru"
   },
   "dependencies": {
     "@vicons/utils": "^0.1.4",

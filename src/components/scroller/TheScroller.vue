@@ -1,24 +1,26 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import {computed, onMounted, ref} from 'vue';
 
-import { TheScrollerPagination } from '@/components';
+
+import {TheScrollerPagination} from '@/components';
 
 // -----------------------------------------------------------------------------
 // Setup
 // -----------------------------------------------------------------------------
 
-const { timeout } = defineProps<{ timeout: number }>();
+const {timeout, data} = defineProps<{ timeout: number, data: { title: string, text: string }[] }>();
 
 // -----------------------------------------------------------------------------
 // State
 // -----------------------------------------------------------------------------
 
 const currentPage = ref(1);
-const totalPages = ref(120);
 const runnerWidth = ref(0);
 const startTime = ref(0);
 const rafId = ref();
 const interval = ref<NodeJS.Timeout | undefined>(undefined);
+
+const totalPages = computed(() => data.length)
 
 // -----------------------------------------------------------------------------
 // Actions
@@ -77,34 +79,33 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="scroller-wrapper">
-    <h2 class="title">Соберите шведскую стенку по своему желанию!</h2>
+  <div v-if="data" class="scroller-wrapper">
+    <h2 class="title">{{ data[currentPage - 1]?.title }}</h2>
 
     <p class="text">
-      ({{ currentPage }}) Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в
-      постели превратился в страшное насекомое.
+     {{data[currentPage - 1]?.text}}
     </p>
 
     <RouterLink :to="{ name: 'constructor.view' }">
       <div
-        type="button"
-        class="btn"
+          type="button"
+          class="btn"
       >
         Перейти в конструктор
       </div>
     </RouterLink>
 
     <TheScrollerPagination
-      v-model:page="currentPage"
-      :pages="totalPages"
-      class="pagination"
-      :pg-forward="pgForward"
-      :pg-back="pgBack"
+        v-model:page="currentPage"
+        :pages="totalPages"
+        class="pagination"
+        :pg-forward="pgForward"
+        :pg-back="pgBack"
     />
     <div class="progress-bar">
       <div
-        class="progress-bar__runner"
-        :style="{ width: `${runnerWidth * 100}%` }"
+          class="progress-bar__runner"
+          :style="{ width: `${runnerWidth * 100}%` }"
       ></div>
     </div>
   </div>
@@ -117,12 +118,13 @@ onMounted(() => {
   position: relative;
   overflow: hidden;
   align-items: start;
+  justify-content: space-between;
 
   padding: 58px 50px;
   row-gap: 20px;
 
   background: $color-white url('@/assets/scroller/bg.png') 100% center no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .progress-bar {
@@ -144,7 +146,7 @@ onMounted(() => {
   display: flex;
   font-size: 40px;
   font-weight: 900;
-  width: 500px;
+  max-width: 500px;
   background: linear-gradient(to right, #0a4ecb, #4788ff);
   background-clip: text;
   color: transparent;
@@ -173,6 +175,8 @@ onMounted(() => {
   color: white;
   font-size: 15px;
   font-weight: 600;
+
+  margin-top: auto;
 }
 
 .pagination {

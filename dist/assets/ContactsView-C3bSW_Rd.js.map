@@ -1,0 +1,1 @@
+{"version":3,"file":"ContactsView-C3bSW_Rd.js","sources":["../../src/views/ContactsView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>ContactsView</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"4EAGE,OAAAA,EAAA,EAAAC,EAAqB,UAAjB,cAAY"}

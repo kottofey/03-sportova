@@ -51,7 +51,7 @@ const bg = computed(() => {
         sec: 'transparent',
         textColor: '#6E7284',
         hoverTextColor: '#ffffff',
-        bgColor: '#A3A6B2',
+        bgColor: '#dedfe7',
         hoverBgColor: '#0A4ECB',
       } as IBg;
     default:

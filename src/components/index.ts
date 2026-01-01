@@ -14,3 +14,4 @@ export { default as IconPhone } from './base/icons/IconPhone.vue';
 // Widgets
 export { default as CartWidget } from './widgets/CartWidget.vue';
 export { default as CatalogueWidget } from './widgets/CatalogueWidget.vue';
+export { default as MiniBannerWidget } from './widgets/MiniBannerWidget.vue';

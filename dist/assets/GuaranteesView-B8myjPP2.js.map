@@ -1,0 +1,1 @@
+{"version":3,"file":"GuaranteesView-B8myjPP2.js","sources":["../../src/views/GuaranteesView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>GuaranteesView</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"4EAGE,OAAAA,EAAA,EAAAC,EAAuB,UAAnB,gBAAc"}

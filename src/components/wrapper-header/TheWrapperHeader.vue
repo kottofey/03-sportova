@@ -138,6 +138,8 @@ const { isHeaderMini = false } = defineProps<{
     </div>
   </template>
 
+  <!--  Mini Header  -->
+  
   <template v-else>
     <div class="header-wrapper header-wrapper--mini">
       <div class="lower-header">
@@ -166,7 +168,6 @@ const { isHeaderMini = false } = defineProps<{
           :icon-size="24"
         >
           <template #icon>
-            <!--            <IconHeart />-->
             <IconSearch />
           </template>
         </TheButton>
@@ -223,6 +224,7 @@ const { isHeaderMini = false } = defineProps<{
 .header-wrapper {
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -299,7 +301,7 @@ const { isHeaderMini = false } = defineProps<{
   min-height: 122px;
   display: flex;
   row-gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -386,6 +388,7 @@ const { isHeaderMini = false } = defineProps<{
   &__item {
     color: $color-white;
     font-size: 14px;
+    text-align: center;
 
     &--mini {
       color: $color-gray-70;

@@ -1,0 +1,1 @@
+{"version":3,"file":"HowToOrderView-BkZ53YXK.js","sources":["../../src/views/HowToOrderView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>How to order</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"iFAGE,OAAAA,EAAA,EAAAC,EAAqB,UAAjB,cAAY"}

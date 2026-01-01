@@ -1,0 +1,1 @@
+{"version":3,"file":"AboutView-Dr_QwQGO.js","sources":["../../src/views/AboutView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>About</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"4EAGE,OAAAA,EAAA,EAAAC,EAAc,UAAV,OAAK"}

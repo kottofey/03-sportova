@@ -1,0 +1,1 @@
+{"version":3,"file":"ConstructorView-AFqrDYZ9.js","sources":["../../src/views/ConstructorView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>ConstructorView</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"4EAGE,OAAAA,EAAA,EAAAC,EAAwB,UAApB,iBAAe"}

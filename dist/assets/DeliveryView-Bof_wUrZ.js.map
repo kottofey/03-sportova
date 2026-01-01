@@ -1,0 +1,1 @@
+{"version":3,"file":"DeliveryView-Bof_wUrZ.js","sources":["../../src/views/DeliveryView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>DeliveryView</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"4EAGE,OAAAA,EAAA,EAAAC,EAAqB,UAAjB,cAAY"}

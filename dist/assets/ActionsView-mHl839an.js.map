@@ -1,0 +1,1 @@
+{"version":3,"file":"ActionsView-mHl839an.js","sources":["../../src/views/ActionsView.vue"],"sourcesContent":["<script setup lang=\"ts\"></script>\n\n<template>\n  <h1>Actions</h1>\n</template>\n\n<style scoped lang=\"scss\"></style>\n"],"names":["_openBlock","_createElementBlock"],"mappings":"iFAGE,OAAAA,EAAA,EAAAC,EAAgB,UAAZ,SAAO"}
