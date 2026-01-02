@@ -36,7 +36,7 @@ const {
   border-radius: 12px;
   outline: none;
   background-color: transparent;
-  border: 2px solid $color-gray-30;
+  border: 1px solid $color-gray-30;
   padding: 5px 20px 5px var(--has-icon-padding);
   font-size: 14px;
   line-height: 100%;

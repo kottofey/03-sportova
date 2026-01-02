@@ -1,6 +1,6 @@
 export default function moneyHelper() {
-  const toRubbles = (amount: number) => {
-    return `${amount.toLocaleString('ru-RU', { maximumFractionDigits: 2, minimumFractionDigits: 2 })} руб.`;
+  const toRubbles = (amount: number, postfix: string = ' руб.', digits: number = 2) => {
+    return `${amount.toLocaleString('ru-RU', { maximumFractionDigits: digits, minimumFractionDigits: digits })} ${postfix}`;
   };
 
   return { toRubbles };

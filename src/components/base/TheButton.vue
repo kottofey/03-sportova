@@ -8,12 +8,16 @@ const {
   isUppercase = false,
   isHoverable = false,
   isGradient = false,
+  ghostHoverBgColor = '',
+  ghostBgColor = '',
 } = defineProps<{
   iconSize?: number | string;
   color?: 'main' | 'alter' | 'ghost';
   isUppercase?: boolean;
   isHoverable?: boolean;
   isGradient?: boolean;
+  ghostHoverBgColor?: string;
+  ghostBgColor?: string;
 }>();
 
 type IBg = {
@@ -47,12 +51,12 @@ const bg = computed(() => {
       } as IBg;
     case 'ghost':
       return {
-        prim: 'transparent',
-        sec: 'transparent',
+        prim: ghostBgColor || 'transparent',
+        sec: ghostBgColor || 'transparent',
         textColor: '#6E7284',
         hoverTextColor: '#ffffff',
         bgColor: '#dedfe7',
-        hoverBgColor: '#0A4ECB',
+        hoverBgColor: ghostHoverBgColor || '#0A4ECB',
       } as IBg;
     default:
       return undefined;
